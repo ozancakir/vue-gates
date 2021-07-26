@@ -278,7 +278,8 @@
   var isConditionPassed = function isConditionPassed(app, condition) {
     return function (el, binding) {
       if (!binding.value) {
-        console.error('You must specify a value in the directive.');
+        // Ozan -> dont need error
+        // console.error('You must specify a value in the directive.');
         return;
       } // Get condition to validate
 
